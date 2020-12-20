@@ -2,10 +2,10 @@
   <v-container>
     <v-row>
       <v-col class="" cols="12">
-        <div class="header-container ">
+        <div class="custom-container ">
           <span
             class=" 
-            about-header display-1 
+            custom-header display-1 
             headerTextSecondary--text 
             font-weight-normal  "
           >
@@ -25,17 +25,17 @@
               >TECHNOLOGIES</v-card-title
             >
             <v-list-item-group color="primary">
-              <v-list-item v-for="(item, i) in items" :key="i">
+              <v-list-item v-for="(skill, i) in skills" :key="i">
                 <v-list-item-icon>
                   <v-icon
                     color="headerTextSecondary"
-                    v-text="item.icon"
+                    v-text="skill.icon"
                   ></v-icon>
                 </v-list-item-icon>
                 <v-list-item-content>
                   <v-list-item-title
                     class="success--text"
-                    v-text="item.text"
+                    v-text="skill.text"
                   ></v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
@@ -51,7 +51,7 @@
 export default {
   name: "AboutApp",
   data: () => ({
-    items: [
+    skills: [
       { text: "Javascript", icon: "mdi-language-javascript" },
       { text: "Vue", icon: "mdi-vuejs" },
       { text: "React", icon: "mdi-react" },
@@ -62,10 +62,10 @@ export default {
 };
 </script>
 <style scoped>
-.header-container {
+.custom-container {
   position: relative;
 }
-.about-header::after {
+.custom-header::after {
   content: "";
   width: 20%;
   height: 1px;
