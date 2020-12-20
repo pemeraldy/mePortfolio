@@ -12,15 +12,17 @@ Vue.use(Vuetify);
 //     info: '#2196F3',
 //     success: '#4CAF50',
 //     warning: '#FFC107',
+            // '#061428;'
 //   }
 export default new Vuetify({
     theme: {
         dark: true,
         themes: {
           dark: {
-            background: '#0a192f',
-            primary: '#1b2635',
+              primary: '#1b2635',
+            background: '#0a192f',            
             backgroundSecondary: '#233044',
+            deepBackground: '#061428',
             accent: '#233044',
             success: '#64ffda',
             primaryText: '#8892b0',

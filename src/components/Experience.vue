@@ -12,44 +12,56 @@
             Experience
           </span>
         </div>
-        <div class="experiance-container mt-12">
-          <v-card>
-            <v-tabs color="success" class="background">
-              <v-tab>
-                <v-icon left>mdi-account</v-icon>
-                Option 1
+        <div class="experiance-container background mt-12">
+          <v-card class="">
+            <v-tabs
+              color="success"
+              background-color="deepBackground"
+              class="background"
+            >
+              <v-tab class="background">
+                Cambiodci
               </v-tab>
-              <v-tab>
-                <v-icon left>mdi-lock</v-icon>
-                Option 2
-              </v-tab>
-              <v-tab>
-                <v-icon left>mdi-access-point</v-icon>
-                Option 3
+              <v-tab class="background">
+                Techmatrix
               </v-tab>
 
               <v-tab-item>
                 <v-card class="background" flat>
-                  <v-card-text>
-                    <p>
-                      Sed aliquam ultrices mauris. Donec posuere vulputate arcu.
-                      Morbi ac felis. Etiam feugiat lorem non metus. Sed a
-                      libero.
-                    </p>
-
-                    <p>
-                      Nam ipsum risus, rutrum vitae, vestibulum eu, molestie
-                      vel, lacus. Aenean tellus metus, bibendum sed, posuere ac,
-                      mattis non, nunc. Aliquam lobortis. Aliquam lobortis.
-                      Suspendisse non nisl sit amet velit hendrerit rutrum.
-                    </p>
-
-                    <p class="mb-0">
-                      Phasellus dolor. Fusce neque. Fusce fermentum odio nec
-                      arcu. Pellentesque libero tortor, tincidunt et, tincidunt
-                      eget, semper nec, quam. Phasellus blandit leo ut odio.
-                    </p>
-                  </v-card-text>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title class="mt-2 font-weight-bold body-1"
+                        >Software Developer @ Cambiodci
+                      </v-list-item-title>
+                      <v-list-item-subtitle class="mt-4 success--text">
+                        <v-chip
+                          color="success"
+                          outlined
+                          text-color="headerTextSecondary"
+                        >
+                          April - October 2018</v-chip
+                        >
+                      </v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list dense color="background">
+                    <v-list-item-group color="primary">
+                      <v-list-item v-for="(duty, i) in dutiesOne" :key="i">
+                        <v-list-item-icon>
+                          <v-icon
+                            color="headerTextSecondary"
+                            v-text="duty.icon"
+                          ></v-icon>
+                        </v-list-item-icon>
+                        <!-- <v-list-item-content> -->
+                        <div
+                          class="headerTextSecondary--text mb-4 "
+                          v-text="duty.text"
+                        ></div>
+                        <!-- </v-list-item-content> -->
+                      </v-list-item>
+                    </v-list-item-group>
+                  </v-list>
                 </v-card>
               </v-tab-item>
               <v-tab-item>
@@ -66,27 +78,6 @@
                   </v-card-text>
                 </v-card>
               </v-tab-item>
-              <v-tab-item>
-                <v-card class="background" flat>
-                  <v-card-text>
-                    <p>
-                      Fusce a quam. Phasellus nec sem in justo pellentesque
-                      facilisis. Nam eget dui. Proin viverra, ligula sit amet
-                      ultrices semper, ligula arcu tristique sapien, a accumsan
-                      nisi mauris ac eros. In dui magna, posuere eget,
-                      vestibulum et, tempor auctor, justo.
-                    </p>
-
-                    <p class="mb-0">
-                      Cras sagittis. Phasellus nec sem in justo pellentesque
-                      facilisis. Proin sapien ipsum, porta a, auctor quis,
-                      euismod ut, mi. Donec quam felis, ultricies nec,
-                      pellentesque eu, pretium quis, sem. Nam at tortor in
-                      tellus interdum sagittis.
-                    </p>
-                  </v-card-text>
-                </v-card>
-              </v-tab-item>
             </v-tabs>
           </v-card>
         </div>
@@ -99,12 +90,27 @@
 export default {
   name: "Experience",
   data: () => ({
-    skills: [
-      { text: "Javascript", icon: "mdi-language-javascript" },
-      { text: "Vue", icon: "mdi-vuejs" },
-      { text: "React", icon: "mdi-react" },
-      { text: "HTML & CSS", icon: "mdi-language-html5" },
-      { text: "Nodejs", icon: "mdi-nodejs" },
+    dutiesOne: [
+      {
+        text: "Work with a team of developer to develop NGO websites",
+        icon: "mdi-arrow-right-circle",
+      },
+      {
+        text:
+          "Interfaced with clients on a weekly basis, providing technological expertise",
+        icon: "mdi-arrow-right-circle",
+      },
+    ],
+    dutiesTwo: [
+      {
+        text: "Work with a team of developer to develop NGO websites",
+        icon: "mdi-arrow-right-circle",
+      },
+      {
+        text:
+          "Interfaced with clients on a weekly basis, providing technological expertise",
+        icon: "mdi-arrow-right-circle",
+      },
     ],
   }),
 };
@@ -120,5 +126,9 @@ export default {
   background-color: aqua;
   opacity: 0.5;
   display: inline-block;
+}
+.experiences {
+  background-color: #061428 !important;
+  border: 2px solid springgreen;
 }
 </style>

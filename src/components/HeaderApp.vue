@@ -30,6 +30,6 @@ export default {
 </script>
 <style scoped>
 .header-landing {
-  height: 90vh;
+  height: 80vh;
 }
 </style>
