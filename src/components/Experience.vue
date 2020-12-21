@@ -116,7 +116,7 @@ export default {
   data: () => ({
     dutiesOne: [
       {
-        text: "Work with a team of developer to develop NGO websites",
+        text: "Worked with a team of developers to build few NGO websites",
         icon: "mdi-arrow-right-circle",
       },
       {
@@ -127,12 +127,13 @@ export default {
     ],
     dutiesTwo: [
       {
-        text: "Work with a team of developer to develop NGO websites",
+        text:
+          "Worked remotely with a team of three developers to build a web GIS application ",
         icon: "mdi-arrow-right-circle",
       },
       {
         text:
-          "Interfaced with clients on a weekly basis, providing technological expertise",
+          "Created client's update reports and made presentations of progress during online meetings",
         icon: "mdi-arrow-right-circle",
       },
     ],
