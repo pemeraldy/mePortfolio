@@ -39,7 +39,7 @@
                           outlined
                           text-color="headerTextSecondary"
                         >
-                          April - October 2018</v-chip
+                          April - September 2018</v-chip
                         >
                       </v-list-item-subtitle>
                     </v-list-item-content>
@@ -66,16 +66,40 @@
               </v-tab-item>
               <v-tab-item>
                 <v-card class="background" flat>
-                  <v-card-text>
-                    <p>
-                      Morbi nec metus. Suspendisse faucibus, nunc et
-                      pellentesque egestas, lacus ante convallis tellus, vitae
-                      iaculis lacus elit id tortor. Sed mollis, eros et ultrices
-                      tempus, mauris ipsum aliquam libero, non adipiscing dolor
-                      urna a orci. Curabitur ligula sapien, tincidunt non,
-                      euismod vitae, posuere imperdiet, leo. Nunc sed turpis.
-                    </p>
-                  </v-card-text>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title class="mt-2 font-weight-bold body-1"
+                        >Software Developer @ Techmatrix
+                      </v-list-item-title>
+                      <v-list-item-subtitle class="mt-4 success--text">
+                        <v-chip
+                          color="success"
+                          outlined
+                          text-color="headerTextSecondary"
+                        >
+                          October 2018 - Present</v-chip
+                        >
+                      </v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list dense color="background">
+                    <v-list-item-group color="primary">
+                      <v-list-item v-for="(duty, i) in dutiesTwo" :key="i">
+                        <v-list-item-icon>
+                          <v-icon
+                            color="headerTextSecondary"
+                            v-text="duty.icon"
+                          ></v-icon>
+                        </v-list-item-icon>
+                        <!-- <v-list-item-content> -->
+                        <div
+                          class="headerTextSecondary--text mb-4 "
+                          v-text="duty.text"
+                        ></div>
+                        <!-- </v-list-item-content> -->
+                      </v-list-item>
+                    </v-list-item-group>
+                  </v-list>
                 </v-card>
               </v-tab-item>
             </v-tabs>
