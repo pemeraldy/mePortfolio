@@ -12,8 +12,8 @@
           I build awesome UI for the web
         </h3>
         <div class=" title font-weight-light primaryText--text my-11">
-          I am a software engineer based in Kano Nigeria. I have good eyes for
-          details, when I'm not coding, I am designing...
+          I am a software engineer. I have good eyes for details, when I'm not
+          coding, I am designing...
         </div>
         <v-btn outlined class="pa-6" color="success">Get In Touch</v-btn>
       </v-col>
@@ -30,6 +30,6 @@ export default {
 </script>
 <style scoped>
 .header-landing {
-  height: 90vh;
+  height: 80vh;
 }
 </style>
