@@ -14,15 +14,15 @@
         </div>
         <div class="dispplay-1 primaryText--text my-10">
           Hello! I'm Peter Olu, a software engineer based in Kano Nigeria, I
-          enjoy creating things that live on the internet, whether that be
-          websites, applications, or anything in between. My goal is to always
-          build products that provide pixel-perfect, performant experiences.
-          Here are a few technologies I've been working with recently:
+          love creating things that live on the internet, be it a website or a
+          web application. I I enjoy collaborating with other developers to
+          achieving a common goal i.e "shipping 🚀 products" . Below is are a
+          few technologies I've been working with recently:
         </div>
         <v-card class="mx-auto">
           <v-list dense color="backgroundSecondary">
             <v-card-title class="font-weight-thin success--text"
-              >TECHNOLOGIES</v-card-title
+              >Languages I Speak</v-card-title
             >
             <v-list-item-group color="primary">
               <v-list-item v-for="(skill, i) in skills" :key="i">
