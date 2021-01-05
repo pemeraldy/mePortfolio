@@ -116,12 +116,17 @@ export default {
   data: () => ({
     dutiesOne: [
       {
-        text: "Worked with a team of developers to build few NGO websites",
+        text: "Worked with a team of developers to build NGO websites",
         icon: "mdi-arrow-right-circle",
       },
       {
         text:
           "Interfaced with clients on a weekly basis, providing technological expertise",
+        icon: "mdi-arrow-right-circle",
+      },
+      {
+        text:
+          "Optimized and developed a corporate website theme based on Odoo ERP technology.",
         icon: "mdi-arrow-right-circle",
       },
     ],
@@ -136,11 +141,20 @@ export default {
           "Created client's update reports and made presentations of progress during online meetings",
         icon: "mdi-arrow-right-circle",
       },
+      {
+        text:
+          "Incorporated UI design knowledge into web app development, enhancing designs with additional rich media assets",
+        icon: "mdi-arrow-right-circle",
+      },
     ],
   }),
 };
 </script>
 <style scoped>
+.container {
+  min-height: 60vh;
+  /* background: #061428; */
+}
 .custom-container {
   position: relative;
 }
