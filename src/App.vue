@@ -19,6 +19,7 @@
             <HeaderApp />
             <about-app />
             <experience />
+            <projects />
           </v-col>
           <v-col cols="2" md="2" xs="1"></v-col>
         </v-row>
@@ -31,6 +32,7 @@
 import AboutApp from "./components/AboutApp.vue";
 import Experience from "./components/Experience.vue";
 import HeaderApp from "./components/HeaderApp";
+import Projects from "./components/Projects.vue";
 
 export default {
   name: "App",
@@ -39,6 +41,7 @@ export default {
     HeaderApp,
     AboutApp,
     Experience,
+    Projects,
   },
 
   data: () => ({
