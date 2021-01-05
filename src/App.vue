@@ -1,5 +1,6 @@
 <template>
   <v-app :style="{ background: $vuetify.theme.themes[theme].background }">
+    <loader />
     <v-app-bar app color="background " class="px-4" dark>
       <v-icon
         @click="drawer = !drawer"
@@ -10,18 +11,16 @@
 
       <v-tabs color="success" class="px-3 d-none d-sm-block">
         <v-spacer></v-spacer>
-        <v-tab class="success--text ">About</v-tab>
+        <v-tab href="#about" class="success--text ">About</v-tab>
         <v-tab class="success--text">Experience</v-tab>
-        <v-tab class="success--text">Projects</v-tab>
+        <v-tab href="#projects" class="success--text">Projects</v-tab>
       </v-tabs>
     </v-app-bar>
     <v-navigation-drawer color="background" v-model="drawer" absolute temporary>
       <div class="mb-2"></div>
       <v-spacer></v-spacer>
       <v-list-item>
-        <v-list-item-avatar>
-          <!-- <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img> -->
-        </v-list-item-avatar>
+        <v-list-item-avatar> </v-list-item-avatar>
 
         <v-list-item-content>
           <v-list-item-title class="success--text">Peter Olu</v-list-item-title>
@@ -64,6 +63,7 @@
 import AboutApp from "./components/AboutApp.vue";
 import Experience from "./components/Experience.vue";
 import HeaderApp from "./components/HeaderApp";
+import Loader from "./components/Loader.vue";
 import Projects from "./components/Projects.vue";
 
 export default {
@@ -74,6 +74,7 @@ export default {
     AboutApp,
     Experience,
     Projects,
+    Loader,
   },
 
   data: () => ({

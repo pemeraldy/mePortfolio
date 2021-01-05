@@ -3,7 +3,7 @@
     <v-row>
       <v-col class="header-landing mt-14  " cols="12">
         <h3 class=" intro success--text font-weight-light body-3">
-          Hi 👋, my name is
+          Hi <span>👋</span> , my name is
         </h3>
         <h1 class=" headerTextSecondary--text my-6 text-md-h1 font-weight-bold">
           Peter Olu.
