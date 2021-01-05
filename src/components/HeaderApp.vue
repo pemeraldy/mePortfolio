@@ -15,7 +15,13 @@
           I am a software engineer. I have good eyes for details, when I'm not
           coding, I am designing...
         </div>
-        <v-btn outlined class="pa-6" color="success">Get In Touch</v-btn>
+        <v-btn
+          outlined
+          class="pa-6"
+          href="mailto:peter.o.olur@gmail.com"
+          color="success"
+          >Get In Touch</v-btn
+        >
       </v-col>
     </v-row>
   </v-container>

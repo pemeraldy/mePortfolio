@@ -19,7 +19,7 @@
         <v-container>
           <v-row dense>
             <v-col mb="5" v-for="project in projects" :key="project.title">
-              <h3 class="text-center mb-3 primaryText--text">
+              <h3 class="text-center mb-3 mt-3 primaryText--text">
                 {{ project.title }}
               </h3>
               <project-cards :projectDetails="project" />
