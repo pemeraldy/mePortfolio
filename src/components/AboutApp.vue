@@ -12,7 +12,7 @@
             About Me
           </span>
         </div>
-        <div class="dispplay-1 primaryText--text my-10">
+        <div class="dispplay-1 primaryText--text my-10 ">
           Hello! I'm Peter Olu, a software engineer based in Kano Nigeria, I
           love creating things that live on the internet, be it a website or a
           web application. I I enjoy collaborating with other developers to
